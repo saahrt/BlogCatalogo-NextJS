@@ -42,44 +42,80 @@ src/
  │   ├─ products/
  
  │   │    ├─ layout.tsx      # Layout exclusivo do catálogo
+ 
  │   │    ├─ page.tsx        # Lista de produtos + filtro por query ?category=
+ 
  │   │    ├─ [id]/page.tsx   # Página de detalhe de produto
+ 
  │   │    └─ category/[slug]/page.tsx  # Produtos por categoria (rota dinâmica)
+ 
  │   ├─ blog/
+ 
  │   │    ├─ layout.tsx      # Layout exclusivo do blog
+ 
  │   │    ├─ page.tsx        # Lista de posts, ordenados por data
+ 
  │   │    └─ [slug]/page.tsx # Página de post individual
+ 
  │
+ 
  ├─ components/
+ 
  │   ├─ Navbar.tsx           # Menu principal (Home, Produtos, Blog, Sobre)
+ 
  │   ├─ Footer.tsx           # Rodapé simples e responsivo
+ 
  │   ├─ ProductCard.tsx      # Card tipado para produtos
+ 
  │   ├─ PostCard.tsx         # Card para posts do blog
+ 
  │   ├─ Breadcrumb.tsx       # Breadcrumb automático via usePathname
+ 
  │   └─ Container.tsx        # Container padrão de layout
+ 
  │
+ 
  ├─ data/
+ 
  │   ├─ products.ts          # Produtos mockados (com imagens, preço, categoria, etc.)
+ 
  │   ├─ categories.ts        # Categorias disponíveis
+ 
  │   └─ posts.ts             # Posts do blog (slug, título, conteúdo, data)
+ 
  │
+ 
  ├─ types/
+ 
  │   ├─ product.ts           # Tipo Product
+ 
  │   └─ post.ts              # Tipo Post
+ 
  │
+ 
  └─ styles/
+ 
      └─ globals.css          # Reset, tipografia, grid, cards e layout geral
+     
      
      As imagens dos produtos ficam em:
 
 public/
+
  └─ images/
+ 
      └─ products/
+     
          ├─ smartphone-1.svg
+         
          ├─ notebook-1.svg
+         
          ├─ books-1.svg
+         
          ├─ jacket-1.svg
+         
          └─ decor-1.svg---
+         
 
 ## Funcionalidades por área
 
@@ -174,4 +210,3 @@ public/
   - Componentização e tipagem com TypeScript
   - Organização clara de pastas para catálogo + blog.
 
-Sinta-se à vontade para adaptar os dados, trocar imagens e estender as funcionalidades a partir desta base. 🙂
