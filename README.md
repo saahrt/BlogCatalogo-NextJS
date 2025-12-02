@@ -28,12 +28,19 @@ A ideia é simular um pequeno portal com duas áreas principais:
 ## Estrutura principal de pastas
 
 src/
+
  ├─ app/
+ 
  │   ├─ layout.tsx           # Layout raiz do app
+ 
  │   ├─ page.tsx             # Home: produtos + posts recentes
+ 
  │   ├─ about/page.tsx       # Página estática "Sobre"
+ 
  │   ├─ not-found.tsx        # Página 404 personalizada
+ 
  │   ├─ products/
+ 
  │   │    ├─ layout.tsx      # Layout exclusivo do catálogo
  │   │    ├─ page.tsx        # Lista de produtos + filtro por query ?category=
  │   │    ├─ [id]/page.tsx   # Página de detalhe de produto
